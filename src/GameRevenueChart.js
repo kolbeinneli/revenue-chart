@@ -18,7 +18,7 @@ const GameRevenueChart = () => {
   const [showMedian, setShowMedian] = useState(false);
 
   useEffect(() => {
-    Papa.parse(`${process.env.PUBLIC_URL}/game_revenue_data.csv`, {
+    Papa.parse('https://kolbeinneli.github.io/revenue-chart/game_revenue_data.csv', {
       download: true,
       header: true,
       complete: (results) => {
